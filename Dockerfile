@@ -15,11 +15,9 @@ WORKDIR $HOME
 RUN chown -R $USER /usr/local/lib/node_modules/
 RUN npm install -g bower grunt-cli gulp
 
-RUN npm install -g polymer-cli
-
 # switching to the non-root user
 USER $USER
-# RUN sudo npm install -g polymer-cli
+RUN sudo npm install -g polymer-cli
 RUN npm cache clear
 EXPOSE 8080
 CMD ["/bin/bash"]
