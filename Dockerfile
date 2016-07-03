@@ -1,4 +1,4 @@
-FROM node:5
+FROM node:6.2.2
 MAINTAINER Tobias Hutterer <github.com/tobiashutterer>
 ENV NODE_ENV development
 # defining a user because polymer-cli doesn't like root user!
