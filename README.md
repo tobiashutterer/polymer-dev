@@ -18,5 +18,5 @@ You can also:
 ### Installation
 
 ```sh
-docker run -it -d -p 8080:8080 -v yourprojectpath:node/yourprojectpath tobiashutterer/polymer-dev:latest
+docker run -it -d -p 8080:8080 -v yourprojectpath:/home/polymer/yourprojectpath tobiashutterer/polymer-dev:latest
 ```
